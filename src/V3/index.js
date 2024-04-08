@@ -8,6 +8,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 import About from "./Images/about.jpg";
 
+//export NODE_OPTIONS=--openssl-legacy-provider
+
 class Container extends Component {
     constructor(){
         super();
@@ -26,7 +28,7 @@ class Container extends Component {
                         experience: [
                             // make this look like a paragraph
                             `As a seasoned Android developer with extensive experience from Android 8 through Android 13,
-                            I have honed my skills in Samsung Pass development. My proficiency in adapting services for inter-process communication
+                            I have honed my skills in Android app development. My proficiency in adapting services for inter-process communication
                             and managing databases through content resolvers has been instrumental in reducing user-reported issues by 25%.
                             My expertise extends to applying design patterns and integrating SDKs to develop scalable and maintainable applications. Representing the SRIN Samsung Pass team, 
                             I have contributed to international collaborations during business trips to Samsung HQ in South Korea and MasterCard in Australia. 
@@ -37,22 +39,26 @@ class Container extends Component {
                             <br/>,
                             "Lead the development of Samsung Pass, leaning on my expertise in Android development, design patterns, and SDK integration.",
                         ]
-                    },
-                    {
-                        duration: "Aug 2017 - March 2018",
-                        location: "Kharagpur, India",
-                        position: "Machine Learning Intern",
-                        experience: [
-                            `Data Preparation: I ensured high-quality model inputs by processing raw data through imputation, normalization, and feature extraction.
-                            Model Optimization: I contributed to building and refining models, experimenting with algorithms and hyper-parameters to boost performance metrics.
-                            Emotion Identification Project: I was part of a team that developed a model to identify user emotions from smartphone usage patterns, achieving an 87% accuracy rate.`, 
-                            <br/>,
-                            <br/>,
-                            "Developed a model to identify user emotions from smartphone usage patterns, achieving an 87% accuracy rate.",
-                        ]
                     }
                 ]
                 
+            },
+            {
+                company: "UTD",
+                items: [
+                    {
+                        duration: "Aug 2022 - Dec 2022",
+                        location: "Dallas, USA",
+                        position: "CS Outreach Tutor",
+                        experience: [
+                            `Collaborated with professors in a team environment to instruct Data Structures, Algorithms, and languages including C, C++, and Java. 
+                             Conceptualized Machine Learning models and OS scheduling algorithms from scratch as a part of curriculum.`, 
+                            <br/>,
+                            <br/>,
+                            "Developed a model to identify user emotions from smartphone usage patterns, achieving an 84% accuracy rate.",
+                        ]
+                    }
+                ]
             },
             {
                 company: "CENRG Labs IIT Kharagpur",
@@ -67,7 +73,7 @@ class Container extends Component {
                             Emotion Identification Project: I was part of a team that developed a model to identify user emotions from smartphone usage patterns, achieving an 87% accuracy rate.`, 
                             <br/>,
                             <br/>,
-                            "Developed a model to identify user emotions from smartphone usage patterns, achieving an 87% accuracy rate.",
+                            "Developed a model to identify user emotions from smartphone usage patterns, achieving an 84% accuracy rate.",
                         ]
                     }
                 ]
@@ -79,14 +85,14 @@ class Container extends Component {
                 place: "Samsung",
                 color: "red",
                 topic: "Android , Image Processing",
-                heading: "MY DIGITAL LIFE",
+                heading: "My Digital Life",
                 content: "Developed Digital ID creation using govt. ID images, verified for authenticity using ML Algorithms."
             },
             {
                 place: "Samsung",
                 color: "blue",
                 topic: "Design Patterns",
-                heading: "MDL ARCHITECTURE DESIGN",
+                heading: "MDL Architecture Design",
                 content: "Designed App Architecture for backward and future compatibility across diverse Android variants."
             },
             {
@@ -101,7 +107,21 @@ class Container extends Component {
                 color: "blue",
                 topic: "Web application",
                 heading: "Workgallery - a platform for dynamic portfolio creation",
-                content: "Developed a Keyboard Plugin for strong password generation and visualization of password strength"
+                content: "Developed a platform for artists to showcase their work and connect with potential clients."
+            },
+            {
+                place: "DoctorDb",
+                color: "blue",
+                topic: "Website",
+                heading: "a website to handle doctor, patient, and pharmacy interactions",
+                content: "Built a website to manage doctor appointments, patient records, and pharmacy prescription orders."
+            },
+            {
+                place: "SUNY Buffalo",
+                color: "blue",
+                topic: "Modern Networking Concepts",
+                heading: "Chat Application from Scratch Using TCP/IP HTTP protocols",
+                content: "Developed a chat application using TCP/IP and HTTP protocols, with features like group chat, user preferred restrictions, and message encryption."
             },
         ]
     }
@@ -207,11 +227,11 @@ class Container extends Component {
                     <div className={"contentAbout"} id={"about"}>
                         <img src={About} alt="" className={"aboutImage"} id={"image1"}/>
                         <div className={"aboutHeader"}>
-                            <Fade right delay={250} duration={500}><h1>Roshan Krishna</h1></Fade>
-                            <Fade right delay={350} duration={500}><h4>Software Engineer</h4></Fade>
-                            <Fade right delay={450} duration={500}><h4>Web Developer</h4></Fade>
-                            <Fade right delay={550} duration={500}><h2>Arizona State University<br/>Computer Science <br/></h2></Fade>
-                            <Fade right delay={650} duration={500}><h4>NIT Calicut</h4></Fade>
+                            <Fade right delay={250} duration={500}><h1>Jayadhar Gandham</h1></Fade>
+                            <Fade right delay={350} duration={500}><h4>Ex-Samsung - Lead Software Engineer</h4></Fade>
+                            <Fade right delay={450} duration={500}><h4>Android and Full Stack Developer</h4></Fade>
+                            <Fade right delay={550} duration={500}><h2>State University of New York at Buffalo <br/>Computer Science <br/></h2></Fade>
+                            <Fade right delay={650} duration={500}><h4>NIT Durgapur</h4></Fade>
                         </div>
                         <Fade bottom delay={650} duration={500}>
                             <div className={"aboutSubHeader"}>
@@ -273,15 +293,15 @@ class Container extends Component {
                         <div className={"contactContainer"}>
                             <Zoom bottom delay={500} duration={500}>
                                 <div className={"contactButtons"}>
-                                    <a href={"mailto:roshankrishna.official@gmail.com"}>Get In Touch</a>
+                                    <a href={"mailto:jayadhargandham@gmail.com"}>Get In Touch</a>
                                 </div>
                             </Zoom>
                             <Zoom bottom delay={500} duration={500}>
                             <div className={"contactButtons"}>
-                                <a href={"https://drive.google.com/file/d/1tuNfVeadeSV7zy3v4jhoPFh8HRugBl-c/view?usp=sharing"} target="_blank" rel="noopener noreferrer">Resume</a>
+                                <a href={"https://www.linkedin.com/in/jayadhargandham/"} target="_blank" rel="noopener noreferrer">Resume</a>
                             </div>
                             </Zoom>
-                            <div className={"contactFooter"}>Designed and built by Roshan Krishna</div>
+                            <div className={"contactFooter"}>Designed by Jayadhar Gandham</div>
                         </div>
                     </div>
                 </div>
@@ -312,10 +332,10 @@ class Container extends Component {
                     <SocialMediaButtons
                         links={
                             [
-                                "https://www.linkedin.com/in/rokrish18/",
-                                "https://www.instagram.com/roshankrishna_",
-                                "https://www.facebook.com/rokrish18",
-                                "https://twitter.com/makro_maniak",
+                                "https://www.linkedin.com/in/jayadhargandham/",
+                                "https://www.instagram.com/jayadharGj",
+                                "https://www.facebook.com/jayadharGj",
+                                "https://twitter.com/jayadharGj",
                             ]
                         }
                         openNewTab={true}
